@@ -1,0 +1,170 @@
+html{
+    overflow-x: hidden !important;
+}
+body{
+    overflow-x: hidden !important;
+}
+.plr-10{
+    padding: 0 80px;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+/*Navbar
+============================================================*/
+.top-nav {
+    background: linear-gradient(-45deg, #5900b3 10%, transparent 0%), 
+    linear-gradient(-45deg, #512DA8 100%, transparent 10%); 
+}
+
+.top-nav .navbar-dark{
+	background:url("../Theme/images/home_hr.png") transparent;
+	padding: 20px 0px 20px 0px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.7);
+}
+.top-nav .nav-item a{
+	color: #fff !important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all .5s;
+}
+.nav-item .nav-link .modtitle:after{
+	position: absolute;
+    content: "";
+    height: 15px;
+    width: 2px;
+    right: 0;
+    margin-right: -20px;
+    bottom: 0;
+}
+.nav-item .nav-link .modtitle:after{
+	background-color: #fff;
+}
+.nav-item .nav-link .modtitle{
+    position: relative;
+}
+.top-nav .navbar-dark .nav-item a:hover{
+	color: #ff6600 !important;
+}
+
+/* reporters's Profile 
+================================================================*/
+.reportersBody{
+    background-color: #bfbfbf;
+}
+.reportersProfile{
+    margin-top: 30px;
+}
+.reporters{
+    background-color: #fff;
+    padding: 40px;
+}
+.reporters span i{
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 20px;
+}
+.reportersProfile .reporters .reportersImg {
+    padding: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 20% !important;
+}
+.reportersHistory{
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.reportersHistory i{
+    font-size: 15px;
+    padding: 2px;
+    color: #000;
+    border-bottom: 1px solid #ff6600;
+    padding-bottom: 5px;
+}
+.reportersHistory b {
+    color: #ff6600;
+}
+.reportersHistory p{
+    font-size: 15px;
+}
+
+/* reporters's Profile End */
+
+/* Point of Violence */
+.violencePoint{
+    background-color: #fff;
+    margin-top: 20px;
+}
+/* Point of Violence end */
+
+/* Traffic Rules */
+.trafficRules{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 50px;
+}
+ /* Traffic Rules End */
+
+ /*===================================
+    SEARCH pRODUCT
+====================================*/
+
+.search-result{
+    margin-top: 50px;
+}
+.search-result h6{
+    color: #aaa;
+}
+.search-result h6 .bold{
+    color: #fd5308;
+}
+.search-result .src-product .card{
+    width: auto;
+    background: #ffffff;
+    border-radius: 0;
+    color: #aaa;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.search-result .src-product .card .thambnail-img{
+    padding: 5px;
+    margin-left: 20px;
+}
+.search-result .src-product .card .thambnail-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.search-result .src-product .card .post-content{
+    margin: 20px 0 0 20px;
+    padding: 3px;
+}
+
+.index-counter .search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+.search-result .src-product .card .post-content .post-title{
+    line-height: 36px;
+}
+.search-result .src-product .card .post-content .post-title .bold{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #404040;
+}
+
+.search-result .src-product .card .post-content .post-title .normal{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #404040;
+}

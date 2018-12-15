@@ -1,0 +1,433 @@
+.header {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    height: 88%;
+    overflow: hidden;
+    left: 0;
+    background: linear-gradient(-45deg, #5900b3 33%, transparent 0%), 
+    linear-gradient(-45deg, #512DA8 100%, transparent 33%); 
+}
+.content-wrapper{
+    top: 85%;
+    min-height: 12%;
+    position:absolute;
+    z-index: 2;
+    width: 100%;
+    background:#fff;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol";
+    font-size: 1.2em;
+    color: #333;
+    font-weight: normal;
+    min-width: 10px;
+    overflow-x: hidden !important;
+    background: #fff;
+}
+.clearfix::after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+}
+.m-t-5{
+	margin-top: 5px;
+}
+.m-t-20{
+	margin-top: 20px;
+}
+.p-t-20{
+	padding-top: 20px;
+}
+.m-t-50{
+    margin-top: 50px;
+}
+.title{
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #ff6600;
+}
+.btn{
+    border-radius: 0 !important;
+    transition: all .5s !important;
+    color: #f2f2f2 !important;
+    background-color: #ff6600 !important;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+.btn:hover{
+    background-color: #fff !important;
+    color: #ff6600 !important;
+    border-color: #ff6600 !important;
+}
+.modtitle{
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #ff6600;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: capitalize;
+}
+select:focus {
+    outline: none;
+}
+option {
+  background-color: #f2f2f2;
+}
+/*Navbar*/
+.top-nav {
+    background: linear-gradient(-45deg, #5900b3 10%, transparent 0%), 
+    linear-gradient(-45deg, #512DA8 100%, transparent 10%); 
+}
+
+.top-nav .navbar-dark{
+	/*background:url("../images/home_hr.png") transparent;*/
+	padding: 20px 0px 20px 0px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.7);
+}
+.top-nav .nav-item a{
+	color: #fff !important;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all .5s;
+}
+.nav-item .nav-link .nav-title:after{
+	position: absolute;
+    content: "";
+    height: 18px;
+    width: 2px;
+    right: 0;
+    margin-right: -20px;
+    bottom: 0;
+}
+.nav-item .nav-link .nav-title:after{
+	background-color: #fff;
+}
+.nav-item .nav-link .nav-title{
+    position: relative;
+}
+.top-nav .navbar-dark .nav-item a:hover{
+	color: #ff6600 !important;
+}
+
+/*=============================
+    User Side-Nav
+=============================*/
+
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background: linear-gradient(-45deg, #5900b3 33%, transparent 0%), 
+  linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  color: #e1ffff;
+}
+.nav-side-menu .brand {
+  line-height: 100px;
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+  cursor: pointer;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #ff6600;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #47307c;
+  border: none;
+  line-height: 38px;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: transparent;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-bottom: .5px solid #47307c;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #e1ffff;
+  font-size: 1.1em;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 40px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #47307c;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+@media (max-width: 766px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+
+/*=============================
+  Account-Content
+=============================*/
+
+.acc-content{
+    /* position: fixed; */
+    overflow: hidden;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 21%;
+    margin-bottom: 30px;
+}
+.createReporter{
+  position: relative !important;
+  
+}
+.acc-content h2{
+    padding:0 0 10px 10px;
+    font-size: 1.8em;
+    color: #ff6600;
+    text-align: center;
+}
+.acc-content .dash-box {
+    position: relative;
+    background: linear-gradient(-45deg, #5900b3 33%, transparent 0%), 
+    linear-gradient(-45deg, #512DA8 100%, transparent 10%);
+    border-radius: 0;
+    text-align: center;
+    margin: 20px 0 50px;
+}
+.acc-content .dash-box-action {
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+.acc-content .dash-box-body {
+    padding: 0px 20px;
+}
+.acc-content .dash-box-action > button {
+    border: none;
+    background: #FFF;
+    border-radius: 19px;
+    padding: 7px 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: .5px;
+    color: #003e85;
+    box-shadow: 0 3px 5px #d4d4d4;
+}
+.acc-content .dash-box-action > button:focus{
+    outline: none;
+}
+.acc-content .dash-box-body > .dash-box-title {
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.acc-content .dash-box-body > .dash-box-button button {
+    background-color: transparent;
+    border:0;
+    font-size: 1.8em;
+    color: rgba(255,255,255,.7);
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all .2s;
+}
+.acc-content .dash-box-body > .dash-box-button button:hover{
+    color: #ff6600;
+}
+.acc-content .dash-box-body > .dash-box-button button:focus{
+    outline: none;
+}
+@media (max-width: 766px){
+    .acc-content{
+        overflow: hidden !important;
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .acc-content .count-button .m-t-5{
+        margin-top: 5px;
+    }
+}
+.acc-content .box-count{
+    padding: 20px 50px;
+    box-shadow: 0 3px 5px #d4d4d4;
+    width: 95%;
+}
+.acc-content .count-button button{
+    margin: 0 0 10px 0;
+    font-size: 1em;
+    font-weight: 500;   
+    width: 50%;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    border:none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, #5900b3 33%, transparent 0%), 
+    linear-gradient(-45deg, #512DA8 100%, transparent 10%);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.acc-content .count-button button:hover{
+    box-shadow: 250px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+.acc-content .count-button button:focus{
+    outline: none;
+}
+/* User */
+.user{
+  padding: 50px;
+}
+/* Driver Info */
+
+.driverInfo a {
+  color: #ff6600;
+}
+.driverHistory{
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.driverHistory i{
+  font-size: 15px;
+  padding: 2px;
+  color: #000;
+  border-bottom: 1px solid #ff6600;
+  padding-bottom: 5px;
+}
+.driverHistory b {
+  color: #ff6600;
+}
+.driverHistory p{
+  font-size: 15px;
+}
+/* Driver Approved */
+.driverApproved{
+  background-color: #fff;
+  padding: 40px;
+}
+.driverApproved span i{
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 20px;
+}
+.driverApproved button{
+  background-color: #ff6600;
+  border-radius: 10px;
+  border-bottom: 2px solid #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.driverApproved .driverImg {
+  padding: 15px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  align-items: center;
+}
