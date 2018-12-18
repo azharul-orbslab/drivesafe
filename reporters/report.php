@@ -172,8 +172,8 @@
         const message = msg;
         (function () {
             var xhr = new XMLHttpRequest();
-            var userpass = 'YW1pbnVsLnRlY2huZXh0OlRlc3QxMjM0NQ==';
-            var url = "http://api.mimsms.com/sms/1/text/single";
+            var userpass = 'Your User Pass';
+            var url = "Your Bluk SMS server";
             xhr.open('POST', url, true);
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.setRequestHeader('Accept', 'application/json');
@@ -196,8 +196,8 @@
         })();
         (function () {
             var xhr = new XMLHttpRequest();
-            var userpass = 'YW1pbnVsLnRlY2huZXh0OlRlc3QxMjM0NQ==';
-            var url = "http://api.mimsms.com/sms/1/text/single";
+            var userpass = 'Your User Pass';
+            var url = "Your Bluk SMS server";
             xhr.open('POST', url, true);
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.setRequestHeader('Accept', 'application/json');
